@@ -4,6 +4,19 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+  
+    <PackageId>DocumentValidation</PackageId>
+    <Version>1.0.0</Version>
+    <License>MIT</License>
+    <Authors>Flavio Henrique Madureira Bergamini</Authors>
+    <PackageDescription>Boolean validator for Brazilian documents (Phone, zip code, email, CNPJ, CPF)</PackageDescription>
+    <Description>Boolean validator for Brazilian documents (Phone, zip code, email, CNPJ, CPF)</Description>
+    <RepositoryUrl>https://github.com/flaviobergamini/DocumentValidation</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/flaviobergamini/DocumentValidation</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>documents;true;false;validator</PackageTags>
+    <Title>DocumentValidation</Title>
+    <Summary>Boolean validator for Brazilian documents (Phone, zip code, email, CNPJ, CPF)</Summary>
   </PropertyGroup>
 
 </Project>
