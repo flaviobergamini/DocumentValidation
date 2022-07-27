@@ -5,29 +5,29 @@ public class DocumentValidationTests
 {
     // Validate Telephone
     [TestMethod]
-    public void ValidateTelephone5Digits()
+    public void ValidatePhone5Digits()
     {
         string telephone = "(35)35123-8146";
 
-        var validate = telephone.ValidateTelephone();
+        var validate = telephone.ValidatePhone();
         Assert.AreEqual(true, validate);
     }
 
     [TestMethod]
-    public void ValidateTelephone4Digits()
+    public void ValidatePhone4Digits()
     {
         string telephone = "(11)3456-8146";
 
-        var validate = telephone.ValidateTelephone();
+        var validate = telephone.ValidatePhone();
         Assert.AreEqual(true, validate);
     }
 
     [TestMethod]
-    public void ValidateTelephone()
+    public void ValidatePhone()
     {
         string telephone = "11)346481-46";
 
-        var validate = telephone.ValidateTelephone();
+        var validate = telephone.ValidatePhone();
         Assert.AreEqual(false, validate);
     }
 

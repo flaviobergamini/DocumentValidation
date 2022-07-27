@@ -1,11 +1,8 @@
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/flaviobergamini/DocumentValidation/main)
+
 # Class Library Document Validation
 
 <h1 align="center">Document Validation</h1>
-
-<p align="center">
-    <img src="https://programadoresdepre.com.br/wp-content/uploads/2021/10/Design-Patterns.jpg">
-</p>
-Imagem retirada do site Mira Flores: https://programadoresdepre.com.br/
 
 ### :books: Description
 
@@ -35,7 +32,7 @@ If you're using Visual Studio Code, go to [DocumentValidation nuget.org](https:/
 
 If you are using Visual Studio Code, go to "Tools -> Manage Nuget Packages -> Manage Nuget Packages for Solution..."
 
-https://drive.google.com/file/d/1S6QkuEagkU-hjpoO7f8-EALRAk4j-MhU/view?usp=sharing
+https://raw.githubusercontent.com/flaviobergamini/DocumentValidation/images/nuget.png
 
 ```csharp
 using DocumentValidation;
@@ -47,7 +44,7 @@ var email = "flavio@hotmail.com";
 bool validateEmail = email.ValidateEmail();
 
 var phone = "(19)99999-9999";
-bool validatePhone = phone.ValidateTelephone();
+bool validatePhone = phone.ValidatePhone();
 ```
 
 You can also clone the repository:
@@ -66,7 +63,6 @@ After the project dependencies installations are complete, build the project usi
 ```
 dotnet build
 ```
-
 Because it is a class library, the dotnet run command will not work.
 
 ### :hammer_and_wrench: Execution of Unit Tests

@@ -12,9 +12,9 @@ public static class Validate
         else
             return false;
     }
-    public static bool ValidateTelephone(this string telephone){
+    public static bool ValidatePhone(this string phone){
         var regex = @"^\(([1-9]){2}\)(?:([0-9]{5})|([0-9]{4}))-([0-9]{4})$";
-        return ValidateRule(regex, telephone);
+        return ValidateRule(regex, phone);
     }
 
     public static bool ValidateCep(this string cep){
