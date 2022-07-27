@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/flaviobergamini/DocumentValidation/main)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/flaviobergamini/DocumentValidation/Build%20and%20deploy%20package)
 
 # Class Library Document Validation
 
@@ -32,7 +32,9 @@ If you're using Visual Studio Code, go to [DocumentValidation nuget.org](https:/
 
 If you are using Visual Studio Code, go to "Tools -> Manage Nuget Packages -> Manage Nuget Packages for Solution..."
 
-https://raw.githubusercontent.com/flaviobergamini/DocumentValidation/images/nuget.png
+<p align="center">
+    <img src="https://raw.githubusercontent.com/flaviobergamini/DocumentValidation/images/nuget.png">
+</p>
 
 ```csharp
 using DocumentValidation;
