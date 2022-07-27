@@ -32,7 +32,7 @@ If you're using Visual Studio Code, go to [DocumentValidation nuget.org](https:/
 
 If you are using Visual Studio Code, go to "Tools -> Manage Nuget Packages -> Manage Nuget Packages for Solution..."
 
-<p align="center">
+<p align="left">
     <img src="https://raw.githubusercontent.com/flaviobergamini/DocumentValidation/images/nuget.png">
 </p>
 
