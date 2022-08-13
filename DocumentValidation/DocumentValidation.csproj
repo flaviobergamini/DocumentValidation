@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
   
     <PackageId>DocumentValidation</PackageId>
-    <Version>1.1.1</Version>
+    <Version>1.2.1</Version>
     <License>MIT</License>
     <Authors>Flavio Henrique Madureira Bergamini</Authors>
     <PackageDescription>Boolean validator for Brazilian documents (Phone, zip code, email, CNPJ, CPF)</PackageDescription>
