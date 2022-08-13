@@ -2,9 +2,9 @@
 
 namespace DocumentValidation.Validates
 {
-    public class CpfValidate:ICpfValidate
+    public class CpfValidate: IValidateDocuments
     {
-        public bool MathCpfValidate(string fullCpf)
+        public bool MathValidate(string fullDocument)
         {
             List<string> wrontCpf = new List<string>(){
                 "000.000.000-00",
@@ -21,11 +21,11 @@ namespace DocumentValidation.Validates
 
             foreach (var i in wrontCpf)
             {
-                if (i == fullCpf)
+                if (i == fullDocument)
                     return false;
             }
-            var cpf = fullCpf.Substring(0, (fullCpf.Length - 3));
-            var digit = fullCpf.Substring(12, 2);
+            var cpf = fullDocument.Substring(0, (fullDocument.Length - 3));
+            var digit = fullDocument.Substring(12, 2);
 
             int multiplies = 10;
             int result = 0;
@@ -45,9 +45,7 @@ namespace DocumentValidation.Validates
                 firstDigit = 0;
 
             if (Int32.Parse(digit.Substring(0, 1)) != firstDigit)
-            {
                 return false;
-            }
 
             multiplies = 11;
             result = 0;
@@ -68,9 +66,7 @@ namespace DocumentValidation.Validates
                 SecondDigit = 0;
 
             if (Int32.Parse(digit.Substring(1, 1)) != SecondDigit)
-            {
                 return false;
-            }
 
             return true;
         } 
