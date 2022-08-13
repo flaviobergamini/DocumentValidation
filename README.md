@@ -30,7 +30,7 @@ You can use the IDE or editor of your choice, but I recommend Visual Studio or V
 
 If you're using Visual Studio Code, go to [DocumentValidation nuget.org](https://www.nuget.org/packages/DocumentValidation/) to install dependencies for your project.
 
-If you are using Visual Studio Code, go to "Tools -> Manage Nuget Packages -> Manage Nuget Packages for Solution..."
+If you are using Visual Studio, go to "Tools -> Manage Nuget Packages -> Manage Nuget Packages for Solution..."
 
 <img src="https://raw.githubusercontent.com/flaviobergamini/DocumentValidation/images/nuget.png">
 
@@ -45,6 +45,12 @@ bool validateEmail = email.ValidateEmail();
 
 var phone = "(19)99999-9999";
 bool validatePhone = phone.ValidatePhone();
+
+string cnpj = "99.999.999/9999-99";
+bool validateCnpj = cnpj.ValidateCnpj();
+
+string cep = "37540-000";
+bool validateCep = cep.ValidateCep();
 ```
 
 You can also clone the repository:

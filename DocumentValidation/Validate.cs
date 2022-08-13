@@ -5,6 +5,8 @@ namespace DocumentValidation;
 public static class Validate
 {
     static readonly CpfValidate cpf = new CpfValidate();
+    static readonly CnpjValidate cnpj = new CnpjValidate();
+
     private static bool ValidateRule(string rule, string word){
 
         var validate = new Regex(rule);
@@ -29,9 +31,15 @@ public static class Validate
         return ValidateRule(regex, email);
     }
 
-    public static bool ValidateCnpj(this string cnpj){
+    public static bool ValidateCnpj(this string fullCnpj){
         var regex = @"^([0-9]{2}.[0-9]{3}.[0-9]{3}/[0-9]{4}-[0-9]{2})|([0-9]{14})$";
-        return ValidateRule(regex, cnpj);
+
+        bool cnpjValidate = ValidateRule(regex, fullCnpj);
+
+        if (!cnpjValidate)
+            return false;
+        else
+            return Validate.cnpj.MathValidate(fullCnpj);
     }
 
     public static bool ValidateCpf(this string fullCpf)
@@ -43,9 +51,7 @@ public static class Validate
         if (!cpfValidate)
             return false;
         else
-        {
-            return cpf.MathCpfValidate(fullCpf);
-        }
+            return Validate.cpf.MathValidate(fullCpf);
 
     }
 }
